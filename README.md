@@ -1,1 +1,1 @@
-# micaelaptecnomulti
+# tecnomulti Aclaraciones del diagrama de flujo: el paso de una pantalla a otra es con botones en los que se pueda hacer click (mousePressed), la historia está inspirada en el libre "elige tu propia aventura: el planeta perfecto", en donde hay una misión de ayudar/salvar a los habitantes de otro planeta. Las pantallas que dicen "incorrecta" y en la que se pierda tienen también un botón que llevan a la pantalla de inicio, lo mismo con la pantalla de creditos. 
