@@ -1,14 +1,14 @@
 
 void Pantalla3() {
   background(100);
-   image(nave,width/2,height/2,800,600);
+   image(imagen[1],width/2,height/2,800,600);
   
   pushStyle();
   fill(0);
   textAlign(CENTER);
   textSize(15);
   text("¡Elegiste la luna correcta!", 380,140);
-  text("Has bajado de tu nave a explorar, al regresar encuentras que esta misma \n ¡había sido atacada!", 380, 200);
+  text(texto [1], 380, 200);
   //botones de opciones-----------------------------
   text("Opción 1", 160,373);
   text("Opción 2", 660,373);

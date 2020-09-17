@@ -1,12 +1,20 @@
+boolean BotonEllipse( float x, float y, float d ){
+  
+  if( dist( mouseX, mouseY, x, y) < d/2 ){
+    return true;
+  } else {
+    return false;
+  }
+}
 
 void Pantalla1(){
 
   //botones-----------------------
-  background(100);
+  background(255);
   imageMode(CENTER);
-image(opcion1,132,280,149,149);
-image(opcion2,380,280,154,140);
-image(opcion3,678,280,149,148);
+image(imagen[7],132,280,149,149);
+image(imagen[8],380,280,154,140);
+image(imagen[9],678,280,149,148);
 //ellipse 1--------------------------
  float d = dist(132,280, mouseX, mouseY);
   float r = 70;
@@ -46,15 +54,15 @@ text("(Seleccione una opción con el mouse)", 380, 450);
 
 
 void clickPantalla1(){
- if ( mouseX>132-35 && mouseX<132+35 && mouseY>280-35 && mouseY<280+35 ) {
+ if (BotonEllipse(132,280,70) ) {
     //botón opción 1
     estado = 2;
   }
-  if ( mouseX>380-35 && mouseX<380+35 && mouseY>280-35 && mouseY<280+35 ) {
+  if ( BotonEllipse(380,280,70) ) {
     //botón opción 2
     estado = 3;
   }
-  if (mouseX>678-35 && mouseX<678+35 && mouseY>280-35 && mouseY<280+35){
+  if (BotonEllipse(678,280,70)){
     //botón opción 3
     estado =4;
   }
